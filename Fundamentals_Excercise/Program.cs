@@ -1,3 +1,4 @@
+using Fundamentals_Excercise.Controllers;
 using Services.Interfaces;
 using Services.Services;
 namespace Fundamentals_Excercise
@@ -10,6 +11,7 @@ namespace Fundamentals_Excercise
 
             // Add services to the container.
             builder.Services.AddScoped<IFactorialService, FactorialService>();
+            builder.Services.AddScoped<ISentenceReverseService, SentenceReverseService>();
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
