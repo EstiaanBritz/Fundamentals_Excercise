@@ -10,13 +10,20 @@ namespace Services.Services
 
         public int Generatefactorial(int input)
         {
-            int Factorial = 1;
-            for (int i = input; i >= 1; i--)
+            if ((input >= 0) && input <= 19)
             {
-                output = Factorial *= i;
-            }
+                int Factorial = 1;
 
-            return output;
+                for (int i = input; i >= 1; i--)
+                {
+                    output = Factorial *= i;
+                }
+                return output;
+                
+            }
+            return 0;
+            
         }
+
     }
 }
