@@ -17,6 +17,7 @@ namespace Fundamentals_Excercise.Controllers
             _sentenceReverseService = sentenceReverseService;
         }
 
+        [HttpGet]
         public string GenerateReverseSentence(string input)
         {
             return _sentenceReverseService.SentenceReverser(input);
